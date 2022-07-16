@@ -1,0 +1,143 @@
+nav {
+    margin: 10px;
+}
+
+main {
+    width: 100%;
+    position: absolute;
+}
+
+nav #tabela {
+    width: 100%;
+    border: 1px;
+    border: 2px solid #ddd;
+    border-collapse: collapse;
+}
+
+h1 {
+    text-transform: uppercase;
+    /* text-align: center */
+}
+
+th,
+tr {
+    border: 2px solid black;
+    width: 150px;
+    height: 32px;
+    text-align: center;
+}
+
+#tabela tr:nth-child(odd) {
+    background: #ddd;
+    border: 2px solid black;
+}
+
+#tabela th,
+tr {
+    border: 2px solid black;
+    width: 150px;
+    height: 32px;
+    text-align: center;
+}
+
+.janela_insert {
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black w/ opacity */
+    /* Black w/ opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.janela_insert form {
+    background: #ddd;
+    width: 300px;
+}
+
+.janela_insert table td:first-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+.janela_insert form input {
+    margin: 6px;
+    width: 200px;
+}
+
+.janela_insert .button {
+    margin: 10px;
+}
+
+.janela_insert form .btn {
+    background-color: blue;
+    width: 80px;
+    color: white;
+    height: 28px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn_criar {
+    width: 100px;
+    border: none;
+    background: rgba(21, 99, 4, 0.719);
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(236, 229, 229);
+}
+
+.delete {
+    width: 100px;
+    border: none;
+    background: rgba(230, 34, 8, 0.719);
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(236, 229, 229);
+    text-align: center;
+}
+
+#tabela td:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.span_fecha {
+    position: relative;
+    top: -75px;
+    left: -25px;
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-left: 10px;
+    background: red;
+    border-radius: 50%;
+    user-select: none;
+    color: white;
+    font-weight: bold;
+}
